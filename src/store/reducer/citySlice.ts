@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 import { CityState } from "../../types/cityType";
 
-const coordinatesApi = "http://api.openweathermap.org/geo/1.0/direct";
+const coordinatesApi = "https://api.openweathermap.org/geo/1.0/direct";
 
 export const fetchCity = createAsyncThunk(
   "forecast/fetchCity",

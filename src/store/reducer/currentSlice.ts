@@ -2,8 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { CurrentState } from "../../types/weatherCurrent";
 
-const coordinatesApi = "http://api.openweathermap.org/geo/1.0/direct";
-const currentWeatherApi = "http://api.openweathermap.org/data/2.5/weather";
+const coordinatesApi = "https://api.openweathermap.org/geo/1.0/direct";
+const currentWeatherApi = "https://api.openweathermap.org/data/2.5/weather";
 
 export const fetchCurrent = createAsyncThunk(
   "forecast/fetchCurrent",
